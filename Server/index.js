@@ -7,14 +7,12 @@ const cookieParser = require("cookie-parser");
 const cors = require('cors');
 const { checkAuth } = require("./middlewares/auth");
 
-const loginRouter = require('./routers/staticRouter')
+const loginRouter = require('./routers/staticRouter');
 const userRoute = require("./routers/user");
+const courseRoute = require("./routers/course");
 
 const app = express()
-const port = process.env.PORT || 5001
-
-app.set("view engine", "ejs");
-app.set("views", path.resolve("./views"));
+const port = process.env.PORT || 5000
 
 const corsOptions = {
   origin: 'http://localhost:3000',
@@ -36,6 +34,7 @@ app.use(cookieParser());
 // ROUTERS
 app.use('/user', userRoute)
 app.use('/', checkAuth, loginRouter)
+app.use('/course', courseRoute)
 
 
 // START SERVER

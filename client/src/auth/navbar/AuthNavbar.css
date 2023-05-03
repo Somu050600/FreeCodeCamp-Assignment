@@ -1,33 +1,35 @@
-*,body{
-    box-sizing: border-box;
-}
-.landingPage{
-    width: 100vw;
-    height: 100%;
-}
 nav{
-    position: relative;
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(21, 33, 73);
+    background-color: rgb(15, 23, 49);
     color: white;
 }
 .nav_search{
     border: 2px solid rgba(0, 0, 255, 0);
+    background-color: rgba(163, 163, 163, 0.673);
     display: flex;
     flex-direction: row;
     margin: 0px 20px;
-    width: 30vw;
-    height: 80%;
+    width: 35vw;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav_search img{
+    margin: 0 5px;
 }
 .nav_search input{
+    font-size: 18px;
     width: 100%;
     color: white;
-    background-color: rgba(255, 255, 255, 0.319);
+    background-color: transparent;
     border: 0;
     outline: none;
 }
@@ -37,11 +39,12 @@ nav{
 .nav_title{
     position: absolute;
     top: 0;
-    left: 43%;
+    left: 40%;
     padding: 5px;
     display: flex;
     flex-direction: row;
     margin: 0 20px;
+    cursor: pointer;
 }
 .nav_title span{
     font-size: 20px;
@@ -55,9 +58,14 @@ nav{
 }
 .nav_menu span{
     font-size: 20px;
-    border: solid rgb(255, 255, 255);
-    padding: 0px 10px;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 3px 10px;
     margin: 0 5px;
+    cursor: pointer;
+}
+.nav_menu span:hover{
+    background-color: white;
+    color: rgb(15, 23, 49);
 }
 .nav_menu button{
     border: solid rgb(216, 152, 32);
@@ -65,5 +73,5 @@ nav{
     font-size: 20px;
     padding: 0px 10px;
     margin: 0 5px;
+    cursor: pointer;
 }
-
