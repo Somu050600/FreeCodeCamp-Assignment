@@ -6,7 +6,7 @@ async function handleCourse(req, res) {
         res.json(courses);
     } catch (error) {
         console.error(error);
-        res.status(500).send("An error occurred while fetching courses" );
+        res.send("An error occurred while fetching courses" );
     }
 }
 module.exports = {
