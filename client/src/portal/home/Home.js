@@ -5,7 +5,7 @@ import './Home.css';
 
 const Home = () => {
     const [courses, setCourses] = useState([]);
-    const courseAPI = 'http://localhost:5000/course';
+    const courseAPI = 'http://localhost:5050/course';
     useEffect(() => {
         axios.get(courseAPI).then((response) => {
             setCourses(response.data);

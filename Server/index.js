@@ -12,7 +12,7 @@ const userRoute = require("./routers/user");
 const courseRoute = require("./routers/course");
 
 const app = express()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5050
 
 const corsOptions = {
   origin: 'http://localhost:3000',
