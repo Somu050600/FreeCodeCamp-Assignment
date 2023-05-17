@@ -5,7 +5,7 @@ import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import './Signup.css';
 
 const Signup = () => {
-    const signupAPI = 'http://localhost:5050/user/signup';
+    const signupAPI = 'https://freecodecamp-server.onrender.com/user/signup';
     const navigate = useNavigate();
 
     const homeHanler = (credentialResponse, error) => {

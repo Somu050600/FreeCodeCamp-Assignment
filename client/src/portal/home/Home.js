@@ -5,7 +5,7 @@ import './Home.css';
 
 const Home = () => {
     const [courses, setCourses] = useState([]);
-    const courseAPI = 'http://localhost:5050/course';
+    const courseAPI = 'https://freecodecamp-server.onrender.com/course';
     useEffect(() => {
         axios.get(courseAPI).then((response) => {
             setCourses(response.data);
