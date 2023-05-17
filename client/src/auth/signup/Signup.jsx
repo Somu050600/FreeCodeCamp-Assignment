@@ -5,7 +5,7 @@ import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import './Signup.css';
 
 const Signup = () => {
-    const signupAPI = 'http://localhost:5050/user';
+    const signupAPI = 'http://localhost:5050/user/signup';
     const navigate = useNavigate();
 
     const homeHanler = (credentialResponse, error) => {

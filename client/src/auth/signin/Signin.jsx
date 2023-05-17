@@ -6,7 +6,7 @@ import './Signin.css';
 
 
 const Signin = () => {
-    const signinAPI = 'http://localhost:5050/user/login';
+    const signinAPI = 'http://localhost:5050/user/signin';
     const navigate = useNavigate();
 
     const homeHanler = (credentialResponse, error) => {

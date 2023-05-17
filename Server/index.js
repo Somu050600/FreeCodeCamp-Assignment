@@ -7,7 +7,6 @@ const cookieParser = require("cookie-parser");
 const cors = require('cors');
 const { checkAuth } = require("./middlewares/auth");
 
-const loginRouter = require('./routers/staticRouter');
 const userRoute = require("./routers/user");
 const courseRoute = require("./routers/course");
 
@@ -33,7 +32,6 @@ app.use(cookieParser());
 
 // ROUTERS
 app.use('/user', userRoute)
-app.use('/', checkAuth, loginRouter)
 app.use('/course', courseRoute)
 
 
